@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- <link media="https://walli.shanga.co/image/view/?id=1373" -->
+        <!-- integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <title>CRC</title>
+</head>
+<!-- background-image :url(https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);background-repeat: no-repeat;background-size: cover -->
+<body style="background-color:  #45bf94;background-image : linear-gradient(to bottom,#bdc3c740 ,#2c3e50 ); " >
+    <h1 style="color:Black; font-weight: bold;margin-top :5cm;font-family: 'Lobster', cursive;font-size:70px"><center>Cyclomatic Redundancy Check</center></h1>
+    <div style="margin-top: 8%;">
+        <div class="container" style="width: 70%; padding: 1%; overflow: hidden;">
+            <div class="input-group input-group-lg" style="width: 60%; float: left;color:white;background-color:black">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg" style="color:white;background-color:black">DataWord</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg" style="font-weight: bold;color:white;background-color:black" id="msg">
+            </div>
+            <div class="input-group input-group-lg" style="width: 35%; float: left; margin-left: 5%;color:white">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg" style="color:white;background-color:black">Key/Divisor</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg" style="font-weight: bold;color:white;background-color:black" id="key">
+            </div>
+        </div>
+        <div style="text-align: center;"><button type="button" class="btn btn-secondary" style="margin: auto;"
+                id="calc">Go</button></div>
+              <!-- <div animation-delay: 2s||inherit;; -->
+
+        <div class="container" style="width: 70%; padding: 1%; text-align: center;">
+            <div class="card" style="width: 50rem; margin: auto;background-color: lightyellow; display: none;" id="show">
+                <div class="card-body" style="text-align: left; overflow: hidden;">
+                    <div style="background-color: white; float: left; width: 50%; margin: auto;"><span
+                            class="badge badge-secondary"
+                            style="font-size: x-large; width: 80%; font-weight: 550;">CRC-Bits</span></div>
+                    <div style="float: left; width: 50%; text-align: center; font-size:x-large;" id="rem"></div>
+                </div>
+                <div class="card-body" style="text-align: left; overflow: hidden;">
+                    <div style="background-color: azure; float: left; width: 50%; margin: auto;"><span
+                            class="badge badge-secondary"
+                            style="font-size: x-large; width: 80%; font-weight: 550;">Codeword</span></div>
+                    <div style="float: left; width: 50%; text-align: center; font-size:x-large;" id="final"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="CN2/test1.js"></script>
+</body>
+
+</html>
